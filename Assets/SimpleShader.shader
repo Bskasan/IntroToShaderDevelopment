@@ -11,7 +11,8 @@ Shader "Unlit/SimpleShader"
         Tags { "RenderType"="Opaque" }
 
         Pass {
-            CGPROGRAM
+            CGPROGRAM // Indiacator - after that cg code works
+
             #pragma vertex vert
             #pragma fragment frag
 
@@ -38,7 +39,7 @@ Shader "Unlit/SimpleShader"
                 return float4(1,1,1,0);
             }
 
-            ENDCG
+            ENDCG // Ends the actual code.
         }
     }
 }
