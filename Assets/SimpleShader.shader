@@ -17,9 +17,21 @@ Shader "Unlit/SimpleShader"
             #pragma fragment frag
 
             #include "UnityCG.cginc"
+            
 
-            struct appdata {
+            // Mesh Data:
+            // Vertex Position,
+            // Vertex normal,
+            // UVs,
+            // Tangents,
+            // Vertex colors
+            struct VertexInput {
                 float4 vertex : POSITION;
+                float4 colors : COLOR;
+                float4 normal : NORMAL;
+                float4 tangent : TANGENT;
+                float4 uv0 : TEXCOORD0;
+                float4 uv1 : TEXCOORD1;
             };
 
             struct v2f {
@@ -29,7 +41,7 @@ Shader "Unlit/SimpleShader"
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
-            v2f vert (appdata v) {
+            v2f vert (VertexInput v) {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);              
                 return o;
