@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 26
+  controlID: 18
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -523,10 +523,10 @@ MonoBehaviour:
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 78
   m_LastFolders:
   - Assets
-  m_LastFoldersGridSize: -1
+  m_LastFoldersGridSize: 78
   m_LastProjectPath: C:\DESKTOP\Game development\Unity Projects\Repository\Unity3D\IntroShaderDevelopment
   m_LockTracker:
     m_IsLocked: 0
@@ -615,7 +615,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 78
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 158
 --- !u!114 &18
@@ -1033,9 +1033,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 0.71455586, y: 0.7610104, z: -0.403504}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0.71455586, y: 0.7610104, z: -0.403504}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1081,13 +1081,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.05477999, y: -0.9392694, z: 0.28778437, w: 0.17879729}
+    m_Target: {x: 0.009433547, y: -0.98535806, z: 0.058015093, w: 0.16013476}
     speed: 2
-    m_Value: {x: -0.05477955, y: 0.9392618, z: -0.28778204, w: -0.17879584}
+    m_Value: {x: 0.009193217, y: -0.98543, z: 0.05653619, w: 0.16014647}
   m_Size:
-    m_Target: 1.1029394
+    m_Target: 1.9546248
     speed: 2
-    m_Value: 1.1029394
+    m_Value: 1.9546248
   m_Ortho:
     m_Target: 0
     speed: 2
