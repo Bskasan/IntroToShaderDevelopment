@@ -5,6 +5,7 @@ Shader"Holistic/HelloShader" // Name of the Shader
         // Added field as my color.
         _myColor ( "Example Color ", Color) = (1, 1, 1, 1)
         _myEmission( "Emission Color", Color) = (1, 1, 1, 1)
+        _myNormal("Normal Color", Color) = (1, 1, 1, 1)
     }
 
     SubShader {
@@ -15,7 +16,9 @@ Shader"Holistic/HelloShader" // Name of the Shader
                 float2 uvMainText;
             };
 
-            fixed4 _myColor, _myEmission; 
+            fixed4 _myColor;
+            fixed4 _myEmission;
+            fixed4 _myNormal;
             // Properties that you want availabe to your shader function.
             // to use them
             
@@ -25,6 +28,7 @@ Shader"Holistic/HelloShader" // Name of the Shader
                 // Two color interact with each other.
                 o.Albedo = _myColor.rgb;
                 o.Emission = _myEmission.rgb;
+                o.Normal = _myNormal;
             }
         ENDCG // End your CG code here.
     }
